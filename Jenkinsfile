@@ -2,7 +2,7 @@ pipeline {
     environment {
         registry = "chuchodavids/chuchobot:latest"
         registryCredential = 'dockerhub'
-        dockerImage
+        dockerImage = ''
     }
     agent any
     stages {
