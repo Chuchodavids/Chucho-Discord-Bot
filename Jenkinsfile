@@ -1,6 +1,6 @@
 pipeline {
     environment {
-        registry = "chuchodavids/chuchobot:latest"
+        registry = "chuchodavids/chuchobot"
         registryCredential = 'dockerhub'
         dockerImage = ''
     }
