@@ -1,0 +1,8 @@
+# Chucho Bot
+
+Discord bot to change default role of new users. This image works better when use in conjuction with Invitarr bot.
+
+ENVIRONMENTS:
+
+TOKEN=BOT TOKEN
+ROLE_ID=ID of the role to use
