@@ -1,8 +1,7 @@
 import discord
 import os
 from dotenv import load_dotenv
-import db_helper
-import cog_helper
+import helpers.db_helper as db_helper
 
 db = db_helper.sqldb()
 db.check_table()
