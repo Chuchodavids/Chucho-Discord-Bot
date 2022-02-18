@@ -7,18 +7,14 @@ services:
   - docker:19.03.12-dind
 
 stages:
-  - build
-  - push
+  - build-push
 
 before_script:
   - docker info
   - docker login -u "$CI_REGISTRY_USER" -p "$CI_REGISTRY_PASSWORD" $CI_REGISTRY
 
 build:
-  stage: build
+  stage: build-push
   script:
     - docker build -t chuchodavids/chuchobot .
-push:
-  stage: push
-  script:
     - docker push chuchodavids/chuchobot
