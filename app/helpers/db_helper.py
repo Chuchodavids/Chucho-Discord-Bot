@@ -2,7 +2,7 @@ import sqlite3
 from datetime import date
 from datetime import timedelta
 
-con = sqlite3.connect('users.db') #todo parametize this so we can have db in a different location
+con = sqlite3.connect('/home/discord/config/users.db') #todo parametize this so we can have db in a different location
 cur = con.cursor()
 delta = timedelta(days=30)
 

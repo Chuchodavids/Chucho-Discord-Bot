@@ -1,6 +1,5 @@
 FROM python:3.8-slim-buster
 
-
 RUN useradd -ms /bin/bash discord
 
 WORKDIR /home/discord/
