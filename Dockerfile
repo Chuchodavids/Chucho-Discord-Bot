@@ -13,4 +13,4 @@ COPY --chown=discord app app
 
 USER discord
 
-ENTRYPOINT [ "python3", "/home/discord/app/app.py"]
+ENTRYPOINT [ "python3", "-u", "/home/discord/app/app.py"]
