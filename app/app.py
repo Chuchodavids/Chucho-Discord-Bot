@@ -21,9 +21,6 @@ class MyClient(discord.Client):
         print('Logged on as {0}!'.format(self.user))
         print("ready")
         print("-------")
-        golden_role_members = self.get_guild(
-            int(guild_id)).get_role(int(role_gold)).members
-        # cog_helper(golden_role_members)
 
     async def on_member_update(self, member, member2):
         if len(member.roles) < len(member2.roles):
