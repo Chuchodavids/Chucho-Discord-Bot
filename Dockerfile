@@ -6,7 +6,9 @@ WORKDIR /home/discord/
 
 COPY requirements.txt requirements.txt
 
-RUN pip3 install -r requirements.txt
+RUN pip3 install -r requirements.txt && \
+    mkdir config && \
+    chown discord config
 
 COPY --chown=discord app app
 

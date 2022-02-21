@@ -5,6 +5,7 @@ import helpers.db_helper as db_helper
 
 db = db_helper.sqldb()
 db.check_table()
+
 # ----- env variables ------
 load_dotenv()
 tz = os.getenv('TZ')
