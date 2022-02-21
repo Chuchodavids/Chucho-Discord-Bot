@@ -8,6 +8,10 @@ COPY requirements.txt requirements.txt
 
 RUN pip3 install -r requirements.txt
 
-COPY app /app
+RUN useradd discord
+
+COPY --chown=discord app /app
+
+USER discord
 
 ENTRYPOINT [ "python3", "/app/app.py"]
